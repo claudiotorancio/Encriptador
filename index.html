@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="esp">
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+    
+        <img src="./imagenes/Group 3.png">
+    </header>
+    <main>
+    <section>
+        <textarea type="text" class="input-text" cols="40" rows="6" placeholder="Ingrese el texto aqui"></textarea>
+
+        <h6 style="margin-top: 230px;">Solo letras minúsculas y sin acentos</h6>
+
+        <div>
+            <button type="button" class="botonA" onclick="btnEncriptar()" style="color: white;" >Encriptar</button>
+            <button type="button" class="botonB" onclick="btnDesencriptar()" >Desencriptar</button>
+        </div>
+    </section>
+    
+    <section>
+                   
+        <textarea input="button Copy"type="text" class="output-text-area" cols="30" rows="15"  placeholder="Ningún mensaje fue encontrado" style="border-radius: 24px;" ></textarea>
+         <div style="margin-top: 685px; margin-left: 180px;">
+            <button type="button" class= "botonC" onclick="copiar()">Copiar</button>
+         </div>
+        
+    </section>
+</main>
+
+
+
+</body>
+<script src="script.js"></script>
+
+</html>

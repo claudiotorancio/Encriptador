@@ -1,0 +1,75 @@
+*{
+    margin: 1%;
+    padding: 0;
+    background: #E5E5E5;
+    font-family: "inter"sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+main{
+    display: flex;
+    
+}
+
+.input-text{
+    margin-top: 90px;
+    margin-left: 30px;
+    border: none;
+    
+
+}
+
+.botonA{
+    position: static;
+    width: 328px;
+    height: 67px;
+    left: 0px;
+    top: 0px;
+    background: #0A3871;
+    border-radius: 24px;
+    
+
+}
+
+.botonB{
+    position: static;
+    width: 328px;
+    height: 67px;
+    left: 0px;
+    top: 0px;
+    background: #D8DFE8;
+    border-radius: 24px;
+}
+
+.output-text-area{
+    position: absolute;
+    width: 400px;
+    height: 730px;
+    left: 1000px;
+    top: 40px;
+    background: #ffffff;
+    
+    
+}
+
+.output-text-area::placeholder{
+    background-image: url(./imagenes/Muñeco.png);
+    background-size: 250px 250px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    
+    
+}
+
+.botonC{
+    position: static;
+    width: 328px;
+    height: 67px;
+    left: 0px;
+    top: 0px;
+    background: #D8DFE8;
+    border-radius: 24px;
+}
