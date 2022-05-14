@@ -26,11 +26,11 @@ function btnDesencriptar(){
     
 
 function desencriptar(StringParaDesencriptar){
-    let matrizCodigon = [["enter","e"],["imes","i"],["ai","a"],["ober","o"],["ufat","u"]]
+    let matrizCodigoInv = [["enter","e"],["imes","i"],["ai","a"],["ober","o"],["ufat","u"]]
     StringParaDesencriptar = StringParaDesencriptar.toLowerCase();
-    for (let i=0; i< matrizCodigon.length; i++){
-        if(StringParaDesencriptar.includes(matrizCodigon[i][0])){
-            StringParaDesencriptar = StringParaDesencriptar.replaceAll(matrizCodigon[i][0],matrizCodigon[i][1]);
+    for (let i=0; i< matrizCodigoInv.length; i++){
+        if(StringParaDesencriptar.includes(matrizCodigoInv[i][0])){
+            StringParaDesencriptar = StringParaDesencriptar.replaceAll(matrizCodigoInv[i][0],matrizCodigoInv[i][1]);
         } 
     }
     return StringParaDesencriptar;
