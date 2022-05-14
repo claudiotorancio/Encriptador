@@ -1,5 +1,5 @@
 *{
-    margin: 1%;
+    margin: 0%;
     padding: 0;
     background: #E5E5E5;
     font-family: "inter"sans-serif;
@@ -21,20 +21,25 @@ main{
 
 }
 
+.estiloBotones{
+    display: inline-block;
+    position: absolute;
+}
+
 .botonA{
-    position: static;
+    display: inline-block;
     width: 328px;
     height: 67px;
     left: 0px;
     top: 0px;
     background: #0A3871;
     border-radius: 24px;
-    
+    color: white;
 
 }
 
 .botonB{
-    position: static;
+    display: inline-block;
     width: 328px;
     height: 67px;
     left: 0px;
@@ -43,14 +48,26 @@ main{
     border-radius: 24px;
 }
 
+.botonC{
+    display: inline-block;
+    position: relative;
+    width: 328px;
+    height: 67px;
+    left: 135px;
+    top: 0px;
+    background: #D8DFE8;
+    border-radius: 24px;
+    
+}
+
 .output-text-area{
-    position: absolute;
+    position: initial;
     width: 400px;
-    height: 730px;
+    height: 600px;
     left: 1000px;
     top: 40px;
     background: #ffffff;
-    
+    border-radius: 24px;
     
 }
 
@@ -64,12 +81,3 @@ main{
     
 }
 
-.botonC{
-    position: static;
-    width: 328px;
-    height: 67px;
-    left: 0px;
-    top: 0px;
-    background: #D8DFE8;
-    border-radius: 24px;
-}
