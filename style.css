@@ -48,17 +48,7 @@ main{
     border-radius: 24px;
 }
 
-.botonC{
-    display: inline-block;
-    position: relative;
-    width: 328px;
-    height: 67px;
-    left: 135px;
-    top: 0px;
-    background: #D8DFE8;
-    border-radius: 24px;
-    
-}
+
 
 .output-text-area{
     position: initial;
@@ -78,6 +68,18 @@ main{
     background-position: center;
     height: 100%;
     
+    
+}
+
+.botonC{
+    display: inline-block;
+    position: relative;
+    width: 328px;
+    height: 67px;
+    left: 40px;
+    top: 0px;
+    background: #D8DFE8;
+    border-radius: 24px;
     
 }
 
