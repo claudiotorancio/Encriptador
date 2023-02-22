@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+
+        <img src="./imagenes/Group 3.png">
+    </header>
+    <main>
+        <section class="entrada">
+            <textarea type="text" class="input-text" cols="40" rows="6" placeholder="Ingrese el texto aqui"></textarea>
+
+            <h6 class="instruccion">Solo letras minúsculas y sin acentos</h6>
+
+            <div class=" estiloBotones">
+                <button type="button" class="botonA" onclick="btnEncriptar()">Encriptar</button>
+                <button type="button" class="botonB" onclick="btnDesencriptar()">Desencriptar</button>
+
+            </div>
+        </section>
+
+        <section class="salida">
+
+            <textarea type="text" class="output-text-area" cols="30" rows="15"
+                placeholder="Ningún mensaje fue encontrado"></textarea>
+
+            <button type="button" class="botonC" onclick="copiar()">Copiar</button>
+
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy Copiright Claudio Torancio</p>
+    </footer>
+
+</body>
+<script src="script.js"></script>
+
+</html>
