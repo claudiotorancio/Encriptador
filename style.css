@@ -151,7 +151,7 @@ main{
      }
      
      .input-text{
-        
+        font-size: 25px;
          margin: 0; 
      }
      
@@ -169,16 +169,27 @@ main{
          
         }
         .botonA{
+            font-size: 25px;
+             margin-left: 0;
+         }
+         
         
-         margin-left: 0;
-     }
+         
+         .botonB{
+            font-size: 25px;
+             margin-left: 0;
+         }
+         
+         .output-text-area {
+             width: 350px;
+         font-size: 20px;
+       
+         }
      
-    
-     
-     .botonB{
-        
-         margin-left: 0;
-     }
+         .output-text-area::placeholder{
+         background-size: 200px 200px;
+         
+         }
 
      .salida {
         display: flex;
@@ -186,7 +197,9 @@ main{
         justify-content: space-around;
      }
      
-     
+     .botonC {
+        font-size: 25px;
+    }
      
     
      
@@ -211,19 +224,29 @@ main{
     
     html {
         display: block;
+       
+        
     }
     main{
        flex-direction: column;
+       
         
+    }
+
+    header {
+        margin-left: 20px;
     }
     .entrada {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+        margin-left: 20px;
+        margin-right: 20px;
+  
     }
     
     .input-text{
-       
+       font-size: 20px;
         margin: 0; 
     }
     
@@ -241,19 +264,31 @@ main{
         
        }
        .botonA{
-       
+       font-size: 25px;
         margin-left: 0;
     }
     
    
     
     .botonB{
-       
+       font-size: 25px;
         margin-left: 0;
     }
     
+    .output-text-area {
+        width: 350px;
+    font-size: 20px;
+  
+    }
+
+    .output-text-area::placeholder{
+    background-size: 200px 200px;
     
-    
+    }
+
+    .botonC {
+        font-size: 25px;
+    }
    
     
     .footer{
