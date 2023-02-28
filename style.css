@@ -1,31 +1,21 @@
-*{
-   
-   justify-content: center;
+* {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
     background: #E5E5E5;
-    font-family: "inter"sans-serif;
+    font-family: "inter" sans-serif;
     font-weight: 400;
     font-size: 32px;
     line-height: 150%;
-    
 }
 
-html {
+header {
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+}
+
+main {
     display: flex;
-    
-}
-
-header{
-    justify-content: space-between;
-    margin-top: 20px;
-   
-   
-}
-
-main{
-    display: flex;
-    margin-left: 0;
-    
-    
 }
 
 .entrada {
@@ -34,273 +24,266 @@ main{
     justify-content: space-around;
 }
 
-.input-text{
-   
-    margin-top: 90px;
-   
-    margin-right: 100px;
-    border-radius: 24px;  
+.input-text {
+    margin-top: 2.8rem;
+    margin-right: 3.1rem;
+    border-radius: 1.5rem;
+    text-align: center;
+    transition-duration: 0.4s;
 }
 
-.instruccion{
-    margin-top: 170px;
-   
-    font-size: 20px;
+.instruccion {
+    margin-bottom: 5.3rem;
+    font-size: 0.7rem;
     text-align: start
 }
-.estiloBotones{
+
+.estiloBotones {
     display: flex;
     justify-content: start;
-    
-    
-   }
+}
 
-.botonA{
+.botonA {
     display: flex;
     align-items: center;
-    width: 328px;
-    height: 67px;
-    
-  
+    width: 11rem;
+    height: 2rem;
     background: #0A3871;
-    border-radius: 24px;
+    border-radius: 0.75rem;
     color: white;
-
+    cursor: pointer;
+    border-color: black;
+    transition-duration: 0.4s;
 }
 
-.botonB{
+.botonA:hover {
+    background-color: #008CBA;
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.botonB {
     display: flex;
     align-items: center;
-    width: 328px;
-    height: 67px;
-    
+    width: 11rem;
+    height: 2rem;
     background: #D8DFE8;
-    border-radius: 24px;
-    margin-left: 80px;
+    border-radius: 0.75rem;
+    margin-left: 2.5rem;
+    cursor: pointer;
+    border-color: black;
+    transition-duration: 0.4s;
 }
 
+.botonB:hover {
+    background-color: #008CBA;
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
 
-
-.output-text-area{
+.output-text-area {
     position: static;
-    width: 400px;
-    height: 575px;
-    left: 1000px;
-    top: 40px;
+    width: 12.5rem;
+    height: 17rem;
     background: #ffffff;
     border-radius: 24px;
-    
-        
+    text-align: center;
+    transition-duration: 0.4s;
 }
 
-
-.output-text-area::placeholder{
-    text-align: center ;
+.output-text-area::placeholder {
+    text-align: center;
     background-image: url(./imagenes/Muñeco.png);
     background-size: 250px 250px;
     background-repeat: no-repeat;
     background-position: center;
     height: 100%;
-    }
-
-.botonC{
-    display: flex;
-    align-items: center;
-   flex-direction: row;
-    width: 328px;
-    height: 67px;
-    
-    background: #D8DFE8;
-    border-radius: 24px;
-    
 }
 
+.botonC {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 11rem;
+    height: 2rem;
+    margin-top: 1.2rem;
+    background: #D8DFE8;
+    border-radius: 24px;
+    cursor: pointer;
+    border-color: black;
+    transition-duration: 0.4s;
+}
+
+.botonC:hover {
+    background-color: #008CBA;
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
 
 .salida {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
     margin-bottom: 0;
 }
 
-.footer{
-    margin-top: 50px;
-    font-size: 20px;
-    text-align: end;
-    margin-bottom: 0
-    ;
+.footer {
+    margin-top: 2rem;
+    font-size: 0.5rem;
+    text-align: center;
 }
-.footer p{
-    
+
+.footer p {
     font-size: 20px;
-    
 }
 
 @media (min-width:768px) and (max-width:1200px) {
-
-    main{
-        flex-direction: column;
-         justify-content: center;
-     }
-     .entrada {
-         display: flex;
-         flex-direction: column;
-         justify-content: space-around;
-       
-     }
-     
-     .input-text{
-        font-size: 25px;
-         margin: 0; 
-     }
-     
-     .instruccion{
-         display: flex;
-         margin-top: 20px;
-     }
-     .estiloBotones{
-        display: flex;
-      justify-content: center;
-       align-items: center; 
-       padding-bottom: 50px;
-      
-       
-         
-        }
-        .botonA{
-            font-size: 25px;
-             margin-left: 0;
-         }
-         
-        
-         
-         .botonB{
-            font-size: 25px;
-             margin-left: 0;
-         }
-         
-         .output-text-area {
-             width: 350px;
-         font-size: 20px;
-       
-         }
-     
-         .output-text-area::placeholder{
-         background-size: 200px 200px;
-         
-         }
-
-     .salida {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-     }
-     
-     .botonC {
-        font-size: 25px;
-    }
-     
-    
-     
-     .footer{
-         margin-top: 50px;
-         font-size: 20px;
-         text-align: center;
-         margin-bottom: 0
-         ;
-     }
-     .footer p{
-         
-         font-size: 20px;
-         
-     }
-
-
-
-}
-
-@media (min-width:320px) and (max-width:768px) {
-    
-    html {
-        display: block;
-       
-        
-    }
-    main{
-       flex-direction: column;
-       
-        
-    }
-
     header {
-        margin-left: 20px;
+        text-align: center;
     }
+    main {
+        flex-direction: column;
+        justify-content: center;
+    }
+
     .entrada {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        margin-left: 20px;
-        margin-right: 20px;
-  
-    }
-    
-    .input-text{
-       font-size: 20px;
-        margin: 0; 
-    }
-    
-    .instruccion{
-        display: flex;
-        margin-top: 20px;
-    }
-    .estiloBotones{
-       
-      flex-direction: column;
-      align-items: center; 
-      padding-bottom: 50px;
-     
-      
-        
-       }
-       .botonA{
-       font-size: 25px;
-        margin-left: 0;
-    }
-    
-   
-    
-    .botonB{
-       font-size: 25px;
-        margin-left: 0;
-    }
-    
-    .output-text-area {
-        width: 350px;
-    font-size: 20px;
-  
     }
 
-    .output-text-area::placeholder{
-    background-size: 200px 200px;
-    
+    .input-text {
+        font-size: 25px;
+        margin: 0;
+    }
+
+    .instruccion {
+        display: flex;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .estiloBotones {
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 50px;
+    }
+
+    .botonA {
+        margin: 25px;
+        font-size: 25px;
+        margin-left: 0;
+    }
+
+    .botonB {
+        font-size: 25px;
+        margin-left: 0;
+    }
+
+    .output-text-area {
+        width: 350px;
+        font-size: 20px;
+    }
+
+    .output-text-area::placeholder {
+        background-size: 200px 200px;
+    }
+
+    .salida {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
     }
 
     .botonC {
         font-size: 25px;
     }
-   
-    
-    .footer{
+
+    .footer {
         margin-top: 50px;
         font-size: 20px;
         text-align: center;
-        margin-bottom: 0
-        ;
+        margin-bottom: 0;
     }
-    .footer p{
-        
+
+    .footer p {
         font-size: 20px;
-        
+    }
+}
+
+@media (min-width:320px) and (max-width:768px) {
+
+    header {
+        text-align: center;
+    }
+    html {
+        display: block;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    header {
+        margin-left: 20px;
+    }
+
+    .entrada {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .input-text {
+        font-size: 20px;
+        margin: 0;
+    }
+
+    .instruccion {
+        text-align: center;
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .estiloBotones {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 1.5rem;
+    }
+
+    .botonA {
+        margin-bottom: 0.5rem;
+        font-size: 25px;
+        margin-left: 0;
+    }
+
+    .botonB {
+        font-size: 25px;
+        margin-left: 0;
+    }
+
+    .output-text-area {
+        width: 350px;
+        font-size: 20px;
+    }
+
+    .output-text-area::placeholder {
+        background-size: 200px 200px;
+
+    }
+
+    .botonC {
+        margin-top: 0.5rem;
+        font-size: 25px;
+        margin-bottom: 0.5rem;
+    }
+
+    .footer {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .footer p {
+        font-size: 20px;
+
     }
 }
