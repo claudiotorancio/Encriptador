@@ -16,9 +16,13 @@ function encriptar(StringParaEncriptar) {
     ["a", "ai"], 
     ["o", "ober"], 
     ["u", "ufat"]]
-    if (StringParaEncriptar === '') {
+    if (StringParaEncriptar === ('')){
         alert('campo palabra obligatorio')
-       return ''
+       return ('')
+    }
+    if (/[^A-ZÑa-zñ\s]/.test(StringParaEncriptar)){
+        alert('solo letras y sin acentos')
+       return ('')
     }
     StringParaEncriptar = StringParaEncriptar.toLowerCase();
     for (let i = 0; i < matrizCodigo.length; i++) {
@@ -59,7 +63,12 @@ function desencriptar(StringParaDesencriptar) {
 }
 
 function copiar() {
+
     const salida = document.querySelector(".output-text-area");
+    if (salida.value === '') {
+        alert('nada para copiar')
+       return ('')
+    }
     salida.select();
     document.execCommand("copy");
     alert("copiado")
